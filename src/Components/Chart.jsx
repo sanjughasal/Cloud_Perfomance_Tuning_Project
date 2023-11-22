@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Line } from 'react-chartjs-2' 
+
+import { Line } from 'react-chartjs-2'
 import { Chart as ChartJS,CategoryScale,LinearScale,PointElement,LineElement,Title,Tooltip,Legend } from 'chart.js'
 
 ChartJS.register(CategoryScale,LinearScale,PointElement,LineElement,Title,Tooltip,Legend);
@@ -15,7 +15,7 @@ const date = [];
 		if (days === "24h") date.push(new Date(arr[i][0]).toLocaleTimeString());
 		else date.push(new Date(arr[i][0]).toLocaleDateString());
 		prices.push(arr[i][1]);
-		
+
 	}
 
 
